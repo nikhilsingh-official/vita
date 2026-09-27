@@ -44,20 +44,73 @@
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: clamp(36px, 6vh, 62px);
-  padding: 22px 0 0;
-  border-top: 1px solid rgba(43, 28, 14, 0.32);
+  gap: clamp(12px, 1.4vw, 18px);
+  margin: clamp(36px, 6vh, 62px) 0 0;
+  padding: 12px 4px 18px;
+  list-style: none;
 
   .impact-card {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 1vw;
+    @include mixins.pinned-card($pin-top: -8px);
+    @include mixins.lined-paper(
+      $background: #fdf8f0,
+      $line-color: rgba(74, 58, 38, 0.06)
+    );
 
-    p {
-      @include mixins.metadata-label($color: $color-ink, $font-size: 12px);
+    display: flex;
+    min-width: 0;
+    min-height: clamp(112px, 8.5vw, 138px);
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: clamp(22px, 2.1vw, 28px) clamp(16px, 1.8vw, 24px) 20px;
+    border: 1px solid rgba(43, 28, 14, 0.14);
+    border-radius: 2px;
+    box-shadow:
+      0 14px 25px rgba(44, 26, 8, 0.22),
+      0 2px 4px rgba(44, 26, 8, 0.14);
+    transform: rotate(-0.7deg);
+
+    &--donation {
+      @include mixins.lined-paper(
+        $background: $color-sage-paper,
+        $line-color: rgba(74, 91, 50, 0.06)
+      );
+
+      transform: rotate(0.6deg) translateY(6px);
     }
+
+    &--partners {
+      @include mixins.lined-paper(
+        $background: #f2e6cb,
+        $line-color: rgba(105, 75, 43, 0.055)
+      );
+
+      transform: rotate(-0.35deg) translateY(2px);
+    }
+
+    &--donation .impact-card__value {
+      font-size: clamp(22px, 2.1vw, 32px);
+    }
+  }
+
+  .impact-card__label {
+    @include mixins.metadata-label(
+      $color: rgba(43, 28, 14, 0.66),
+      $font-size: 9px,
+      $letter-spacing: 0.14em
+    );
+
+    line-height: 1.35;
+  }
+
+  .impact-card__value {
+    color: $color-ink;
+    font-family: $font-heading;
+    font-size: clamp(28px, 2.6vw, 40px);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    overflow-wrap: anywhere;
   }
 }
 
@@ -274,24 +327,22 @@
 
   .hero-impact {
     grid-template-columns: 1fr;
-    gap: 18px;
-    max-width: 300px;
+    gap: 20px;
+    max-width: 340px;
+    padding-inline: 10px;
 
-    > div {
-      align-items: center;
+    .impact-card {
+      width: 100%;
+      min-height: 108px;
+      padding: 23px 22px 19px;
 
-      + div {
-        margin-left: 0;
-        padding-top: 18px;
-        padding-left: 0;
-        border-top: 1px solid rgba(43, 28, 14, 0.2);
-        border-left: 0;
+      &--donation {
+        transform: rotate(0.6deg);
       }
-    }
 
-    dd,
-    dt {
-      text-align: center;
+      &--partners {
+        transform: rotate(-0.35deg);
+      }
     }
   }
 
