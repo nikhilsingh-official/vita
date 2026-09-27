@@ -1,0 +1,28 @@
+@use '../variables' as *;
+@use '../mixins';
+
+.photo-print {
+  position: relative;
+  display: flex;
+  width: min(100%, clamp(180px, 12vw, 228px));
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 10px 13px;
+  @include mixins.paper-surface($background: #fdfaf2, $shadow: $shadow-small);
+
+  img {
+    width: 100%;
+    aspect-ratio: 1.46;
+    object-fit: cover;
+    filter: saturate(0.62) contrast(0.88) brightness(1.05);
+  }
+
+  figcaption {
+    padding-left: 4px;
+    color: #5b4632;
+    font-family: $font-body;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+}

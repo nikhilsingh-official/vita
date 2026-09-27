@@ -1,0 +1,170 @@
+@use '../variables' as *;
+@use '../mixins';
+
+.archive-section {
+  padding: clamp(48px, 7vh, 84px) clamp(20px, 5vw, 72px) clamp(70px, 9vh, 110px);
+}
+
+.archive-inner {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(26px, 4vh, 40px);
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+
+  h2 {
+    margin-top: 7px;
+    font-size: clamp(36px, 4.4vw, 52px);
+    line-height: 1;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.16);
+  }
+
+  > p {
+    max-width: 34ch;
+    color: rgba(46, 28, 10, 0.68);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+.year-marker {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  span {
+    padding: 6px 18px;
+    border-radius: $radius-large $radius-large 0 0;
+    background: #f2e6cb;
+    box-shadow: $shadow-small;
+    color: $color-ink;
+    font-family: $font-heading;
+    font-size: 15px;
+  }
+
+  i {
+    height: 1px;
+    flex: 1;
+    background: rgba(46, 28, 10, 0.22);
+  }
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  gap: clamp(24px, 3vw, 38px);
+}
+
+.archive-poster {
+  @include mixins.pinned-card;
+
+  display: flex;
+  min-height: clamp(160px, 9.3vw, 178px);
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  padding: 22px 20px 18px;
+  border: 0;
+  transform: rotate(var(--rotation));
+  cursor: pointer;
+  text-align: left;
+  transition:
+    transform 180ms $transition-ease,
+    box-shadow 180ms $transition-ease;
+
+  &:hover {
+    transform: rotate(var(--rotation)) translateY(-4px);
+    box-shadow: 0 13px 28px rgba(44, 26, 8, 0.31);
+  }
+
+  &:active {
+    transform: rotate(var(--rotation)) translateY(-1px);
+  }
+
+  &--selected {
+    box-shadow:
+      0 0 0 3px $color-accent-dark,
+      $shadow-paper;
+  }
+
+  small {
+    @include mixins.metadata-label(
+      $font-size: 9.5px,
+      $letter-spacing: 0.16em,
+      $font-weight: null
+    );
+  }
+
+  > strong {
+    color: $color-ink;
+    font-family: $font-heading;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 0.98;
+  }
+
+  em {
+    color: $color-accent-dark;
+    font-size: 17px;
+    font-style: normal;
+  }
+}
+
+.archive-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(60, 47, 34, 0.3);
+  font-size: 12px;
+
+  span {
+    color: $color-muted;
+  }
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.future-space {
+  display: flex;
+  min-height: clamp(160px, 9.3vw, 178px);
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  border: 2px dashed rgba(46, 28, 10, 0.28);
+  border-radius: $radius-large;
+  color: rgba(46, 28, 10, 0.62);
+  font-size: 12.5px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@include mixins.up-to($breakpoint-tablet) {
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@include mixins.up-to($breakpoint-small) {
+  .archive-section {
+    padding-inline: 16px;
+  }
+
+  .archive-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 34px;
+  }
+}

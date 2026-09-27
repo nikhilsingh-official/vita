@@ -1,0 +1,33 @@
+$color-bg: #f5ead8;
+$color-text: #201e1d;
+$color-ink: #2b1c0e;
+$color-ink-soft: #4a3a26;
+$color-muted: #7d6b52;
+$color-accent: #c67139;
+$color-accent-dark: #8c491a;
+$color-sage: #7a8a5e;
+$color-sage-paper: #e7eed6;
+$color-divider: rgba(43, 28, 14, 0.18);
+$cork: #b3844f;
+
+$font-heading: 'Playfair Display', Georgia, serif;
+$font-body: 'Lexend', system-ui, sans-serif;
+
+$content-max-width: min(92vw, 1120px);
+$about-max-width: min(92vw, 1000px);
+
+$radius-small: 3px;
+$radius-medium: 6px;
+$radius-large: 8px;
+$pin-size: 16px;
+$breakpoint-wide: 980px;
+$breakpoint-tablet: 740px;
+$breakpoint-small: 480px;
+
+$transition-fast: 160ms;
+$transition-ease: ease;
+
+$shadow-paper:
+  0 16px 34px rgba(44, 26, 8, 0.3),
+  0 2px 4px rgba(44, 26, 8, 0.2);
+$shadow-small: 0 7px 18px rgba(44, 26, 8, 0.24);

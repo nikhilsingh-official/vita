@@ -1,0 +1,177 @@
+@use '../variables' as *;
+@use '../mixins';
+
+$frame: #5a391d;
+$frame-lip: #2f1c0b;
+$frame-text: #f8ead2;
+$tag-paper-active: #fbf4e4;
+$header-gutter: clamp(20px, 4vw, 56px);
+
+// Horizontal streaks for the wooden board frame. Wide enough that it never visibly repeats.
+$wood-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2800' height='80'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.004 .325' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='2800' height='80' filter='url(%23g)'/%3E%3C/svg%3E");
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 $header-gutter;
+  background-color: $frame;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(255, 236, 205, 0.16) 0,
+      rgba(255, 236, 205, 0) 3px,
+      transparent 45%,
+      rgba(20, 10, 2, 0.3) 100%
+    ),
+    $wood-grain;
+  background-size: auto, 2800px 80px;
+  background-blend-mode: normal, overlay;
+  box-shadow: 0 10px 18px -6px rgba(30, 16, 4, 0.5);
+
+  // The frame's front lip, casting a shadow onto the cork.
+  &::after {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: -5px;
+    left: 0;
+    height: 6px;
+    background: linear-gradient(180deg, #4a2d14, $frame-lip);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 236, 205, 0.12),
+      0 3px 6px rgba(30, 16, 4, 0.4);
+    content: '';
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    button {
+      padding: 8px 14px;
+      border: 0;
+      border-radius: $radius-small;
+      background: transparent;
+      color: rgba(248, 234, 210, 0.82);
+      cursor: pointer;
+      font-family: $font-heading;
+      font-size: 15px;
+      transition:
+        background $transition-fast $transition-ease,
+        color $transition-fast $transition-ease,
+        transform 220ms cubic-bezier(0.34, 1.4, 0.64, 1);
+
+      &:hover {
+        background: rgba(248, 234, 210, 0.1);
+        color: $frame-text;
+      }
+
+      // The current section is a paper label pinned to the frame.
+      &.active {
+        background: $tag-paper-active;
+        box-shadow:
+          inset 0 -2px 0 $color-accent,
+          0 2px 5px rgba(20, 10, 2, 0.45);
+        color: $color-ink;
+        transform: rotate(-1.2deg);
+      }
+    }
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+
+  &-mark {
+    display: block;
+    width: 36px;
+    height: 36px;
+    flex: none;
+  }
+
+  &-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    strong {
+      color: $frame-text;
+      font-family: $font-heading;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1;
+      text-shadow: 0 1px 1px rgba(20, 10, 2, 0.45);
+    }
+
+    small {
+      @include mixins.metadata-label(
+        $color: rgba(248, 234, 210, 0.6),
+        $font-size: 10px,
+        $letter-spacing: 0.16em,
+        $font-weight: null
+      );
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header nav button {
+    transition: none;
+  }
+}
+
+@include mixins.up-to($breakpoint-tablet) {
+  .site-header {
+    height: 56px;
+    gap: 12px;
+
+    nav button {
+      padding: 7px 10px;
+      font-size: 14px;
+    }
+  }
+
+  .brand-copy {
+    strong {
+      font-size: 18px;
+    }
+
+    small {
+      font-size: 8.5px;
+    }
+  }
+}
+
+@include mixins.up-to($breakpoint-small) {
+  .site-header {
+    padding: 0 16px;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  // Not enough room for the wordmark and three links; the logo carries the brand.
+  .brand-copy {
+    display: none;
+  }
+
+  .site-header nav button {
+    padding: 7px 9px;
+  }
+}

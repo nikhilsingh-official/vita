@@ -1,0 +1,150 @@
+@use 'variables' as *;
+
+@mixin up-to($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Physical materials -------------------------------------------------------
+// Components describe the object they render instead of rebuilding paper,
+// tape, and pin effects declaration by declaration.
+
+@mixin paper-surface(
+  $background: $color-bg,
+  $shadow: $shadow-paper,
+  $radius: null,
+  $border: null
+) {
+  @if $border {
+    border: $border;
+  }
+
+  background: $background;
+
+  @if $radius {
+    border-radius: $radius;
+  }
+
+  @if $shadow {
+    box-shadow: $shadow;
+  }
+}
+
+@mixin lined-paper(
+  $background: $color-bg,
+  $line-color: rgba(105, 75, 43, 0.055),
+  $line-spacing: 25px
+) {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent calc($line-spacing - 1px),
+      $line-color $line-spacing
+    ),
+    $background;
+}
+
+@mixin tape-strip(
+  $width: 100px,
+  $height: 26px,
+  $background: rgba(233, 222, 196, 0.75),
+  $shadow: 0 1px 3px rgba(60, 40, 16, 0.22)
+) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  background: $background;
+  box-shadow: $shadow;
+}
+
+// Attach the shared `.pin` object to a card. The pin's material and size live
+// in `_objects.scss`; this mixin owns only the parent/attachment geometry.
+@mixin pinned-card(
+  $pin-top: -9px,
+  $pin-left: calc(50% - ($pin-size * 0.5)),
+  $pin-right: null,
+  $pin-z-index: null,
+  $position: relative
+) {
+  position: $position;
+
+  > .pin {
+    @if $pin-z-index {
+      z-index: $pin-z-index;
+    }
+
+    top: $pin-top;
+
+    @if $pin-left {
+      left: $pin-left;
+    }
+
+    @if $pin-right {
+      right: $pin-right;
+    }
+  }
+}
+
+@mixin status-badge($padding: 6px 9px, $font-size: 9px) {
+  padding: $padding;
+  border: 1px solid currentColor;
+  border-radius: $radius-small;
+  font-size: $font-size;
+  letter-spacing: 0.12em;
+
+  &--completed {
+    color: #56633f;
+  }
+}
+
+// A wooden peg suspends the card from a rail. The peg and its nail stay
+// together so every hanging card uses the same construction.
+@mixin hanging-card($peg-rotation: 3deg) {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -36px;
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 42px;
+    border: 1px solid rgba(72, 45, 20, 0.42);
+    border-radius: 2px 2px 4px 4px;
+    background: linear-gradient(90deg, #8d6035, #d3a56d 42%, #9a6839);
+    box-shadow: 1px 2px 3px rgba(44, 26, 8, 0.34);
+    content: '';
+    transform: rotate($peg-rotation);
+  }
+
+  &::after {
+    position: absolute;
+    top: -23px;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #4c3420;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.35);
+    content: '';
+  }
+}
+
+// Small uppercase metadata appears throughout reports, receipts, and cards.
+@mixin metadata-label(
+  $color: $color-muted,
+  $font-size: 9px,
+  $letter-spacing: 0.12em,
+  $font-weight: 700
+) {
+  color: $color;
+  font-size: $font-size;
+
+  @if $font-weight {
+    font-weight: $font-weight;
+  }
+
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+}
