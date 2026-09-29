@@ -1,4 +1,4 @@
-// Overridden by NUXT_PUBLIC_FIREBASE_* (apphosting.yaml, .env).
+// Public Firebase web config; .env overrides it with the emulator project.
 export default defineNuxtConfig({
   compatibilityDate: '2026-09-01',
   devtools: { enabled: false },
@@ -20,14 +20,18 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       firebase: {
-        apiKey: '',
-        authDomain: '',
-        projectId: 'demo-vita',
-        storageBucket: '',
-        appId: '',
+        apiKey: 'AIzaSyD036Lki5xBuXnKAIeQw2C_CN32jpYr13s',
+        authDomain: 'vita-35822.firebaseapp.com',
+        projectId: 'vita-35822',
+        storageBucket: 'vita-35822.firebasestorage.app',
+        appId: '1:254392075217:web:68d618d28fb858cd5e16f0',
       },
       useEmulators: false,
     },
+  },
+
+  $development: {
+    nitro: { plugins: ['~~/server/dev/seed-emulator.ts'] },
   },
 
   routeRules: {

@@ -1,16 +1,4 @@
-# Public web app config (Firebase console > Project settings > Your apps).
+# Firebase App Hosting. The Firebase web config is set in nuxt.config.ts.
 runConfig:
   minInstances: 0
   maxInstances: 2
-
-env:
-  - variable: NUXT_PUBLIC_FIREBASE_PROJECT_ID
-    value: vita-35822
-  - variable: NUXT_PUBLIC_FIREBASE_API_KEY
-    value: AIzaSyD036Lki5xBuXnKAIeQw2C_CN32jpYr13s
-  - variable: NUXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-    value: vita-35822.firebaseapp.com
-  - variable: NUXT_PUBLIC_FIREBASE_APP_ID
-    value: 1:254392075217:web:68d618d28fb858cd5e16f0
-  - variable: NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET
-    value: vita-35822.firebasestorage.app

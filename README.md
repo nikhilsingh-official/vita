@@ -1,6 +1,6 @@
 # Project Vita
 
-Website and point of sale for Project Vita's student-run food stalls. Nuxt, Firebase (Firestore and Auth), hosted on Firebase App Hosting.
+Website and point of sale for Project Vita's student-run food stalls. Nuxt with Firebase (Firestore and Auth).
 
 - `/` and `/stall/:slug`: the public notice board, rendered on the server from published stalls.
 - `/admin`: stalls, partners and the POS. Sign in with Google; access is limited to the emails in the `admins` collection. Works offline and syncs when the connection returns.
@@ -16,7 +16,7 @@ pnpm emulators         # Auth + Firestore emulators, UI on http://127.0.0.1:4000
 pnpm dev               # http://localhost:3000
 ```
 
-The dev server fills an empty emulator from `scripts/seed/` on first request. `pnpm seed` does the same explicitly. In the emulator, "Sign in with Google" opens a test account picker; use an email from `ADMIN_EMAILS`.
+The dev server fills an empty emulator from `scripts/seed/` on the first API request. `pnpm seed` does the same explicitly. In the emulator, "Sign in with Google" opens a test account picker; use an email from `ADMIN_EMAILS`.
 
 The emulators run as the `demo-vita` project, so development never touches production.
 
@@ -45,8 +45,9 @@ Images go in `public/testimonials`, with alt text in `app/data/testimonials.js`.
 
 ## Deploying
 
-Project: `vita-35822` (`.firebaserc`), web config in `apphosting.yaml`.
+Firebase project: `vita-35822`. Its public web config is the default in `nuxt.config.ts`, and the server reads Firestore through the public web SDK, so no credentials or environment variables are needed to host the site.
 
+- Vercel: import the repository; the Nuxt preset is detected automatically. Add the deployment's domain under Firebase console > Authentication > Settings > Authorized domains so admin sign-in works.
+- Firebase App Hosting works the same way (`apphosting.yaml`).
 - Rules: `pnpm exec firebase deploy --only firestore:rules`
 - Add an admin: `ADMIN_EMAILS=name@example.com NUXT_PUBLIC_FIREBASE_PROJECT_ID=vita-35822 node scripts/seed-firestore.mjs --production` (needs `gcloud auth application-default login`)
-- Hosting: connect the repository in Firebase console, App Hosting. Nuxt is detected automatically.

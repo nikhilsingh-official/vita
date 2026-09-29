@@ -13,7 +13,12 @@ const router = useRouter()
 const slug = computed(() => String(route.params.slug))
 const { data: stall, error } = await usePublishedStall(slug)
 if (error.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Stall not found', fatal: true })
+  const notFound = error.value.statusCode === 404
+  throw createError({
+    statusCode: notFound ? 404 : 503,
+    statusMessage: notFound ? 'Stall not found' : 'Stall could not be loaded',
+    fatal: true,
+  })
 }
 
 const hasPhotos = computed(() => Boolean(stall.value.gallery.length))
