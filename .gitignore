@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Nuxt
+.nuxt
+.output
+.data
+
+# Env and Firebase local state
+.env
+.firebase
+*-debug.log
+
+# Original records (student names, internal finances); only needed by
+# scripts/import_stall_data.py to rebuild the seed data.
+sources/

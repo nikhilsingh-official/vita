@@ -1,0 +1,1042 @@
+[
+  {
+    "slug": "codeday-2026",
+    "title": "CodeDay 2026",
+    "status": "upcoming",
+    "published": true,
+    "pinned": false,
+    "sortOrder": 9,
+    "date": "2026",
+    "story": "CodeDay 2026 is the next stall, expected to raise ₹61,500 with CodeDay.",
+    "ngo": {
+      "name": "CodeDay",
+      "recorded": true
+    },
+    "impact": {
+      "amountRaised": 61500,
+      "expenses": null,
+      "platesServed": null,
+      "itemsBasis": null
+    },
+    "menu": [
+      {
+        "name": "Lunch: veg rice bowls",
+        "category": "Savoury",
+        "price": 200,
+        "quantitySold": null
+      },
+      {
+        "name": "Snack: popcorn",
+        "category": "Savoury",
+        "price": 120,
+        "quantitySold": null
+      },
+      {
+        "name": "Dinner: veg burger",
+        "category": "Savoury",
+        "price": 220,
+        "quantitySold": null
+      }
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "swim-meet-2026",
+    "title": "Swim Meet 2026",
+    "status": "completed",
+    "published": true,
+    "pinned": false,
+    "sortOrder": 8,
+    "date": "2026-08-29",
+    "story": "Swim Meet 2026 raised ₹18,370. Its partner organisation is still to be confirmed.",
+    "ngo": {
+      "name": "Partner not recorded",
+      "recorded": false
+    },
+    "impact": {
+      "amountRaised": 18370,
+      "expenses": 7588.92,
+      "platesServed": 161,
+      "itemsBasis": "Actual counts"
+    },
+    "menu": [
+      {
+        "name": "Butter Popcorn",
+        "category": "Savoury",
+        "price": 100,
+        "quantitySold": 26
+      },
+      {
+        "name": "Cheese Popcorn",
+        "category": "Savoury",
+        "price": 120,
+        "quantitySold": 17
+      },
+      {
+        "name": "Nachos and Salsa",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 25
+      },
+      {
+        "name": "French Fries",
+        "category": "Savoury",
+        "price": 170,
+        "quantitySold": 11
+      },
+      {
+        "name": "Peri Peri Fries",
+        "category": "Savoury",
+        "price": 180,
+        "quantitySold": 14
+      },
+      {
+        "name": "Veg Momos (5 pc)",
+        "category": "Savoury",
+        "price": 170,
+        "quantitySold": 5
+      },
+      {
+        "name": "Chicken Momos (5 pc)",
+        "category": "Savoury",
+        "price": 200,
+        "quantitySold": 4
+      },
+      {
+        "name": "Chicken Nuggets (5 pc)",
+        "category": "Savoury",
+        "price": 200,
+        "quantitySold": 0
+      },
+      {
+        "name": "Garlic Bread",
+        "category": "Savoury",
+        "price": 200,
+        "quantitySold": 0
+      },
+      {
+        "name": "Ice Pops",
+        "category": "Sweets",
+        "price": 70,
+        "quantitySold": 0
+      },
+      {
+        "name": "Brownies",
+        "category": "Sweets",
+        "price": 120,
+        "quantitySold": 5
+      },
+      {
+        "name": "Gatorade",
+        "category": "Drinks",
+        "price": 50,
+        "quantitySold": 21
+      },
+      {
+        "name": "Lemonade",
+        "category": "Drinks",
+        "price": 50,
+        "quantitySold": 19
+      },
+      {
+        "name": "Blue Lagoon",
+        "category": "Drinks",
+        "price": 100,
+        "quantitySold": 5
+      },
+      {
+        "name": "Lemon Iced Tea",
+        "category": "Drinks",
+        "price": 70,
+        "quantitySold": 2
+      },
+      {
+        "name": "Peach Iced Tea",
+        "category": "Drinks",
+        "price": 100,
+        "quantitySold": 7
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/stalls/swim-meet-2026/hero.webp",
+        "alt": "Students serving customers at the Project Vita Swim Meet stall",
+        "crop": "center 42%"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/cooking.webp",
+        "alt": "A student preparing food at the Swim Meet stall",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/plate.webp",
+        "alt": "Food being plated at the Swim Meet stall",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/counter.webp",
+        "alt": "Students working at the Swim Meet stall counter",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3431.webp",
+        "alt": "A volunteer logging orders on a laptop before the stall opens",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3439.webp",
+        "alt": "Popcorn kernels popping in the stall's popcorn maker",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3441.webp",
+        "alt": "A volunteer adding kernels to the popcorn maker",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3443.webp",
+        "alt": "The Swim Meet stall seen from the walkway, with volunteers setting up",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3444.webp",
+        "alt": "Students crowding around the stall's order table",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3445.webp",
+        "alt": "A queue forming under the blue canopy at the Swim Meet stall",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3447.webp",
+        "alt": "Customers gathered in front of the stall under the canopy",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3448.webp",
+        "alt": "Volunteers working behind the stall tables",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3449.webp",
+        "alt": "A volunteer seasoning a tray of fries",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3450.webp",
+        "alt": "A volunteer shaking seasoning over fries",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3451.webp",
+        "alt": "Fries being plated at the Swim Meet stall",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3453.webp",
+        "alt": "Ketchup being added to a plate of fries",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3455.webp",
+        "alt": "The order and payment table with its QR code",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3456.webp",
+        "alt": "A volunteer holding a finished plate of fries",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3457.webp",
+        "alt": "A volunteer in a hairnet tending the popcorn maker",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3458.webp",
+        "alt": "A smiling volunteer at the Swim Meet stall",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3460.webp",
+        "alt": "Customers paying at the order table",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3462.webp",
+        "alt": "The stall's canopy, cooler and supplies",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3463.webp",
+        "alt": "Popcorn being tossed with seasoning in a tub",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3464.webp",
+        "alt": "A volunteer in a hairnet seasoning popcorn",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3466.webp",
+        "alt": "Popcorn being scooped into a serving cup",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3469.webp",
+        "alt": "A plate of nachos being served",
+        "crop": "center"
+      },
+      {
+        "src": "/stalls/swim-meet-2026/gallery/img-3470.webp",
+        "alt": "A volunteer drizzling sauce over nachos",
+        "crop": "center"
+      }
+    ],
+    "heroImage": "/stalls/swim-meet-2026/hero.webp",
+    "heroImageAlt": "Students serving customers at the Project Vita Swim Meet stall"
+  },
+  {
+    "slug": "production-2025",
+    "title": "Production 2025",
+    "status": "completed",
+    "published": true,
+    "pinned": false,
+    "sortOrder": 7,
+    "date": "2025-12-13",
+    "story": "Production 2025 raised ₹42,150 in support of RGH BA Program.",
+    "ngo": {
+      "name": "RGH BA Program",
+      "recorded": true
+    },
+    "impact": {
+      "amountRaised": 42150,
+      "expenses": 11073,
+      "platesServed": 410,
+      "itemsBasis": "Sheet figures, likely estimates"
+    },
+    "menu": [
+      {
+        "name": "Butter Popcorn",
+        "category": "Savoury",
+        "price": 100,
+        "quantitySold": 120
+      },
+      {
+        "name": "Cheese Popcorn",
+        "category": "Savoury",
+        "price": 120,
+        "quantitySold": 80
+      },
+      {
+        "name": "Nachos & Salsa",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 70
+      },
+      {
+        "name": "Veg Momo",
+        "category": "Savoury",
+        "price": 170,
+        "quantitySold": 25
+      },
+      {
+        "name": "Chicken Momo",
+        "category": "Savoury",
+        "price": 200,
+        "quantitySold": 25
+      },
+      {
+        "name": "Fresh Lemonade",
+        "category": "Drinks",
+        "price": 100,
+        "quantitySold": 50
+      },
+      {
+        "name": "Fresh Orange Juice",
+        "category": "Drinks",
+        "price": 100,
+        "quantitySold": 40
+      }
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "hack-club-daydream-2025",
+    "title": "Hack Club Daydream 2025",
+    "status": "completed",
+    "published": true,
+    "pinned": false,
+    "sortOrder": 6,
+    "date": "2025",
+    "story": "Hack Club Daydream 2025 raised ₹2,34,384 in support of Hack Club.",
+    "ngo": {
+      "name": "Hack Club",
+      "recorded": true
+    },
+    "impact": {
+      "amountRaised": 234384,
+      "expenses": null,
+      "platesServed": null,
+      "itemsBasis": null
+    },
+    "menu": [],
+    "gallery": []
+  },
+  {
+    "slug": "sports-day-2025",
+    "title": "Sports Day 2025",
+    "status": "completed",
+    "published": true,
+    "pinned": false,
+    "sortOrder": 5,
+    "date": "2025-11-15",
+    "story": "Sports Day 2025 raised ₹72,480 in support of Care For All.",
+    "ngo": {
+      "name": "Care For All",
+      "recorded": true
+    },
+    "impact": {
+      "amountRaised": 72480,
+      "expenses": 52241,
+      "platesServed": 906,
+      "itemsBasis": "Sheet estimates; overstate sales"
+    },
+    "menu": [
+      {
+        "name": "Butter Popcorn",
+        "category": "Savoury",
+        "price": 50,
+        "quantitySold": 60
+      },
+      {
+        "name": "Cheese Popcorn",
+        "category": "Savoury",
+        "price": 70,
+        "quantitySold": 60
+      },
+      {
+        "name": "Nachos n Salsa",
+        "category": "Savoury",
+        "price": 70,
+        "quantitySold": 50
+      },
+      {
+        "name": "Veg Momos",
+        "category": "Savoury",
+        "price": 120,
+        "quantitySold": 20
+      },
+      {
+        "name": "Chicken Momos",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 40
+      },
+      {
+        "name": "French Fries",
+        "category": "Savoury",
+        "price": 100,
+        "quantitySold": 30
+      },
+      {
+        "name": "Peri-Peri Fries",
+        "category": "Savoury",
+        "price": 120,
+        "quantitySold": 10
+      },
+      {
+        "name": "Cheese Fries",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 10
+      },
+      {
+        "name": "Veg Burger",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 30
+      },
+      {
+        "name": "Chicken Burger",
+        "category": "Savoury",
+        "price": 200,
+        "quantitySold": 35
+      },
+      {
+        "name": "Chicken Nuggets",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 25
+      },
+      {
+        "name": "Lime Soda",
+        "category": "Drinks",
+        "price": 50,
+        "quantitySold": null
+      },
+      {
+        "name": "Mixed Fruit Juice",
+        "category": "Drinks",
+        "price": 50,
+        "quantitySold": 30
+      },
+      {
+        "name": "Gatorade Glass",
+        "category": "Drinks",
+        "price": 50,
+        "quantitySold": 120
+      },
+      {
+        "name": "Iced Tea",
+        "category": "Drinks",
+        "price": 100,
+        "quantitySold": 90
+      },
+      {
+        "name": "Blue Lagoon",
+        "category": "Drinks",
+        "price": 120,
+        "quantitySold": 50
+      },
+      {
+        "name": "Ice Cream Sandwiches",
+        "category": "Sweets",
+        "price": 70,
+        "quantitySold": 50
+      },
+      {
+        "name": "Ice Pops",
+        "category": "Sweets",
+        "price": 70,
+        "quantitySold": 36
+      },
+      {
+        "name": "Ice Cream Sundae",
+        "category": "Sweets",
+        "price": 100,
+        "quantitySold": 60
+      },
+      {
+        "name": "Brownie with Ice Cream",
+        "category": "Sweets",
+        "price": 150,
+        "quantitySold": 100
+      },
+      {
+        "name": "Add-on: Nata de Coco",
+        "category": "Add-on",
+        "price": 30,
+        "quantitySold": 50
+      },
+      {
+        "name": "Add-on: Mango Boba",
+        "category": "Add-on",
+        "price": 30,
+        "quantitySold": 50
+      },
+      {
+        "name": "Add-on: Citric Acid",
+        "category": "Add-on",
+        "price": 30,
+        "quantitySold": null
+      },
+      {
+        "name": "Sundae topping: chocolate sauce",
+        "category": "Add-on",
+        "price": 30,
+        "quantitySold": 15
+      },
+      {
+        "name": "Sundae topping: gummy bites",
+        "category": "Add-on",
+        "price": 30,
+        "quantitySold": 30
+      },
+      {
+        "name": "Sundae topping: assorted gummies",
+        "category": "Add-on",
+        "price": 30,
+        "quantitySold": 30
+      },
+      {
+        "name": "Sundae toppings: sprinkles, choc chips, Gems, Oreo, KitKat",
+        "category": "Add-on",
+        "price": null,
+        "quantitySold": null
+      }
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "inmun-2025",
+    "title": "INMUN 2025",
+    "status": "completed",
+    "published": true,
+    "pinned": false,
+    "sortOrder": 4,
+    "date": "2025",
+    "story": "INMUN 2025 raised ₹2,27,317 in support of Care For All.",
+    "ngo": {
+      "name": "Care For All",
+      "recorded": true
+    },
+    "impact": {
+      "amountRaised": 227317,
+      "expenses": 40211,
+      "platesServed": 1900,
+      "itemsBasis": "Projected (round numbers)"
+    },
+    "menu": [
+      {
+        "name": "Lays Chips",
+        "category": "Savoury",
+        "price": 70,
+        "quantitySold": 200
+      },
+      {
+        "name": "Nachos and Salsa",
+        "category": "Savoury",
+        "price": 100,
+        "quantitySold": 200
+      },
+      {
+        "name": "French Fries",
+        "category": "Savoury",
+        "price": 100,
+        "quantitySold": 100
+      },
+      {
+        "name": "Cheesy Fries",
+        "category": "Savoury",
+        "price": 120,
+        "quantitySold": 100
+      },
+      {
+        "name": "Butter Popcorn",
+        "category": "Savoury",
+        "price": 50,
+        "quantitySold": 120
+      },
+      {
+        "name": "Cheese Popcorn",
+        "category": "Savoury",
+        "price": 70,
+        "quantitySold": 120
+      },
+      {
+        "name": "Vegetable Momos",
+        "category": "Savoury",
+        "price": 120,
+        "quantitySold": 150
+      },
+      {
+        "name": "Chicken Momos",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 150
+      },
+      {
+        "name": "Chicken Nuggets",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 80
+      },
+      {
+        "name": "Orange Juice",
+        "category": "Drinks",
+        "price": 30,
+        "quantitySold": 20
+      },
+      {
+        "name": "Lime Soda",
+        "category": "Drinks",
+        "price": 30,
+        "quantitySold": 60
+      },
+      {
+        "name": "Gatorade Cup",
+        "category": "Drinks",
+        "price": 50,
+        "quantitySold": 200
+      },
+      {
+        "name": "Iced Tea",
+        "category": "Drinks",
+        "price": 70,
+        "quantitySold": 50
+      },
+      {
+        "name": "Blue Lagoon",
+        "category": "Drinks",
+        "price": 70,
+        "quantitySold": 100
+      },
+      {
+        "name": "Chocolate Brownie",
+        "category": "Sweets",
+        "price": 100,
+        "quantitySold": 50
+      },
+      {
+        "name": "Craft your own Sundae",
+        "category": "Sweets",
+        "price": 100,
+        "quantitySold": 100
+      },
+      {
+        "name": "Brownie add-on: ice cream",
+        "category": "Add-on",
+        "price": 50,
+        "quantitySold": 40
+      },
+      {
+        "name": "Tier 1 topping: chocolate sauce",
+        "category": "Add-on",
+        "price": 10,
+        "quantitySold": 40
+      },
+      {
+        "name": "Tier 1 topping: caramel sauce",
+        "category": "Add-on",
+        "price": 10,
+        "quantitySold": 40
+      },
+      {
+        "name": "Tier 1 topping: strawberry sauce",
+        "category": "Add-on",
+        "price": 10,
+        "quantitySold": 40
+      },
+      {
+        "name": "Tier 2 topping: M&Ms",
+        "category": "Add-on",
+        "price": 20,
+        "quantitySold": 70
+      },
+      {
+        "name": "Tier 2 topping: sprinkles",
+        "category": "Add-on",
+        "price": 20,
+        "quantitySold": 70
+      },
+      {
+        "name": "Tier 2 topping: chocolate chips",
+        "category": "Add-on",
+        "price": 20,
+        "quantitySold": 40
+      },
+      {
+        "name": "Tier 3 topping: gummy worms",
+        "category": "Add-on",
+        "price": 30,
+        "quantitySold": 50
+      },
+      {
+        "name": "Tier 3 topping: gummy strips",
+        "category": "Add-on",
+        "price": 30,
+        "quantitySold": 50
+      },
+      {
+        "name": "Tier 3 topping: gummy bites",
+        "category": "Add-on",
+        "price": 30,
+        "quantitySold": 50
+      },
+      {
+        "name": "Tier 4 topping: Oreo crumble",
+        "category": "Add-on",
+        "price": 50,
+        "quantitySold": 50
+      },
+      {
+        "name": "Tier 4 topping: KitKat",
+        "category": "Add-on",
+        "price": 50,
+        "quantitySold": 50
+      }
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "inmun-2024",
+    "title": "INMUN 2024",
+    "status": "completed",
+    "published": true,
+    "pinned": false,
+    "sortOrder": 3,
+    "date": "2024-06-29",
+    "story": "INMUN 2024 raised ₹47,000 in support of Care For All.",
+    "ngo": {
+      "name": "Care For All",
+      "recorded": true
+    },
+    "impact": {
+      "amountRaised": 47000,
+      "expenses": 11792,
+      "platesServed": 446,
+      "itemsBasis": "Planned plates from stock"
+    },
+    "menu": [
+      {
+        "name": "Chip n Dip",
+        "category": "Savoury",
+        "price": 70,
+        "quantitySold": 90
+      },
+      {
+        "name": "Nachos and Salsa",
+        "category": "Savoury",
+        "price": 100,
+        "quantitySold": 72
+      },
+      {
+        "name": "Fries",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 50
+      },
+      {
+        "name": "Veg Momo",
+        "category": "Savoury",
+        "price": 120,
+        "quantitySold": 34
+      },
+      {
+        "name": "Chicken Nuggets",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 22
+      },
+      {
+        "name": "Chicken Momo",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": 34
+      },
+      {
+        "name": "Gatorade",
+        "category": "Drinks",
+        "price": 50,
+        "quantitySold": 110
+      },
+      {
+        "name": "Blue Lagoon",
+        "category": "Drinks",
+        "price": 100,
+        "quantitySold": 10
+      },
+      {
+        "name": "Brownie",
+        "category": "Sweets",
+        "price": 70,
+        "quantitySold": 24
+      }
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "eat-play-love-2023",
+    "title": "Eat, Play, Love 2023",
+    "status": "completed",
+    "published": true,
+    "pinned": false,
+    "sortOrder": 2,
+    "date": "2023",
+    "story": "Eat, Play, Love 2023 raised ₹45,000 in support of Mitti Cafe.",
+    "ngo": {
+      "name": "Mitti Cafe",
+      "recorded": true
+    },
+    "impact": {
+      "amountRaised": 45000,
+      "expenses": 10258,
+      "platesServed": null,
+      "itemsBasis": "No sales counts recorded"
+    },
+    "menu": [
+      {
+        "name": "Soya Sticks",
+        "category": "Savoury",
+        "price": 50,
+        "quantitySold": null
+      },
+      {
+        "name": "Chips and Dip",
+        "category": "Savoury",
+        "price": 70,
+        "quantitySold": null
+      },
+      {
+        "name": "Nachos and Dip",
+        "category": "Savoury",
+        "price": 100,
+        "quantitySold": null
+      },
+      {
+        "name": "French Fries",
+        "category": "Savoury",
+        "price": 100,
+        "quantitySold": null
+      },
+      {
+        "name": "Chicken Nuggets",
+        "category": "Savoury",
+        "price": 150,
+        "quantitySold": null
+      },
+      {
+        "name": "Gatorade",
+        "category": "Drinks",
+        "price": 100,
+        "quantitySold": null
+      }
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "sports-day-2023",
+    "title": "Sports Day 2023",
+    "status": "completed",
+    "published": true,
+    "pinned": false,
+    "sortOrder": 1,
+    "date": "2023",
+    "story": "Sports Day 2023 raised ₹44,450 in support of RGH + Inventure.",
+    "ngo": {
+      "name": "RGH + Inventure",
+      "recorded": true
+    },
+    "impact": {
+      "amountRaised": 44450,
+      "expenses": 29976,
+      "platesServed": null,
+      "itemsBasis": "No sales counts recorded"
+    },
+    "menu": [
+      {
+        "name": "French fries (plain & masala)",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Veg & chicken momos",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Hot chips (salted, spicy)",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Lay's chips (5 flavours)",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Nachos with salsa & cheese-jalapeño dip",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Cheese garlic bread",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Chicken nuggets",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Margherita pizza",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Chicken popcorn",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Veg burger",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Chicken burger",
+        "category": "Savoury",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Lava cake",
+        "category": "Sweets",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Chocolate fudge cake slice",
+        "category": "Sweets",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Tea cake",
+        "category": "Sweets",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Orange juice",
+        "category": "Drinks",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Mixed fruit juice",
+        "category": "Drinks",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Lemon-mint drink (lemons, mint, Sprite)",
+        "category": "Drinks",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Tang",
+        "category": "Drinks",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Gatorade",
+        "category": "Drinks",
+        "price": null,
+        "quantitySold": null
+      },
+      {
+        "name": "Prime Hydration",
+        "category": "Drinks",
+        "price": null,
+        "quantitySold": null
+      }
+    ],
+    "gallery": []
+  }
+]

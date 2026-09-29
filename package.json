@@ -1,0 +1,28 @@
+{
+  "name": "vita",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "emulators": "firebase emulators:start --project demo-vita $([ -d .firebase/emulator-data ] && echo --import .firebase/emulator-data) --export-on-exit .firebase/emulator-data",
+    "seed": "node --env-file=.env scripts/seed-firestore.mjs",
+    "import:data": "python3 scripts/import_stall_data.py"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.29.0",
+    "embla-carousel-auto-scroll": "^8.6.0",
+    "embla-carousel-vue": "^8.6.0",
+    "firebase": "^12.19.0",
+    "firebase-admin": "^14.5.0",
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.40"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.31.0",
+    "sass-embedded": "^1.100.0"
+  }
+}

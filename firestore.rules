@@ -1,0 +1,32 @@
+rules_version = '2';
+
+// The server reads with the Admin SDK and bypasses these rules.
+// Admins are listed in /admins, keyed by verified email.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && exists(/databases/$(database)/documents/admins/$(request.auth.token.email));
+    }
+
+    match /stalls/{slug} {
+      allow read: if resource.data.published == true || isAdmin();
+      allow write: if isAdmin();
+
+      match /orders/{orderId} {
+        allow read, write: if isAdmin();
+      }
+    }
+
+    match /partners/{partnerId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /admins/{email} {
+      allow read: if request.auth != null && request.auth.token.email == email;
+      allow write: if false;
+    }
+  }
+}

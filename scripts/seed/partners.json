@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rgh-inventure",
+    "name": "RGH + Inventure",
+    "description": "Ramagondanahalli Government School (RGH) is a government school in Whitefield, Bengaluru, run as a model English-medium school through a public–private partnership with the Government of Karnataka. It has grown from about 200 students in 2019 to nearly 800."
+  },
+  {
+    "id": "mitti-cafe",
+    "name": "Mitti Cafe",
+    "description": "Mitti Café is a Bengaluru-born social enterprise whose cafés are run entirely by adults with physical, intellectual and psychiatric disabilities, giving them paid work and training in hospitality."
+  },
+  {
+    "id": "care-for-all",
+    "name": "Care For All",
+    "description": null
+  },
+  {
+    "id": "hack-club",
+    "name": "Hack Club",
+    "description": "Hack Club is a global nonprofit network of teen-led coding clubs. Its Daydream game jam brings thousands of high schoolers together in over 100 cities to build their own games."
+  },
+  {
+    "id": "rgh-ba-program",
+    "name": "RGH BA Program",
+    "description": "A programme at Ramagondanahalli Government School (RGH), a government school in Whitefield, Bengaluru, run as a model English-medium school through a public–private partnership with the Government of Karnataka."
+  },
+  {
+    "id": "codeday",
+    "name": "CodeDay",
+    "description": "CodeDay is a nonprofit that runs 24-hour events where students build apps and games together, with no coding experience needed. It holds beginner-friendly CodeDays across India, including in Bengaluru."
+  }
+]
